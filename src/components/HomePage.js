@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Button from "@mui/material/Button";
 
 export default function HomePage(props) {
 	const [age, setAge] = useState(10);
@@ -29,6 +30,7 @@ export default function HomePage(props) {
 			<p>{props.name}</p>
 			<p>{age / 10}</p>
 			<input type="text" onChange={handleOnChange} />
+			<Button>submit</Button>
 		</div>
 	);
 }

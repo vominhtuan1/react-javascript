@@ -24,6 +24,24 @@ export default function HomePage(props) {
 		fetchData();
 	}, []);
 
+	const [joke, setJoke] = useState({
+		id: 1,
+		setup: 1000,
+		punchline: "string",
+		type: "string",
+	});
+
+	console.log(joke.setup / 10);
+
+	useEffect(() => {
+		setJoke({
+			id: "2",
+			setup: "string",
+			punchline: "string",
+			type: "string",
+		});
+	}, []);
+
 	return (
 		<div>
 			<h3>HomePage</h3>
